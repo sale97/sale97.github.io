@@ -63,7 +63,7 @@ a {
 
 .fields {
   h1 {
-    font-size: 6vh;
+    font-size: 6.5vh;
     text-align: center;
     padding-top: 100px;
     letter-spacing: 1px;
@@ -72,7 +72,7 @@ a {
   }
 
   .fields-p {
-    font-size: 2vh;
+    font-size: 2.5vh;
     letter-spacing: 1px;
     padding-bottom: 100px;
     padding-top: 10px;
@@ -86,7 +86,7 @@ a {
       text-align: left;
 
       p {
-        padding: 3vh 17vh 3vh 4vh;
+        padding: 3.5vh 17.5vh 3.5vh 4.5vh;
         border: solid;
         border-radius: 5px;
         border-width: 1px;
@@ -106,15 +106,15 @@ a {
 
 .about {
   text-align: center;
-  max-width: 110vh;
+  max-width: 120vh;
   margin: 0 auto;
 
   h3 {
-    font-size: 3vh;
+    font-size: 3.5vh;
   }
 
   p {
-    font-size: 1.8vh;
+    font-size: 2.1vh;
     color: #939596;
     font-weight: 500;
     padding-bottom: 20px;
@@ -141,7 +141,7 @@ a {
   }
 
   h3 {
-    font-size: 6vh;
+    font-size: 6.5vh;
   }
 
   .port-grup {
@@ -164,19 +164,20 @@ a {
 
     img {
       height: auto;
-      max-width: 65vh;
+      max-width: 65.5vh;
       border-radius: 5px;
     }
 
     a {
-      font-size: 3vh;
+      font-size: 3.5vh;
       color: #61892f;
       font-weight: 600;
       max-width: 50px;
     }
 
     p {
-      font-size: 1.8vh;
+      font-size: 2vh;
+      max-width: 65vh;
       font-weight: 500;
       color: #939596;
       padding-bottom: 50px;
@@ -230,4 +231,30 @@ a {
     font-size: 1.8vh;
     letter-spacing: 1px;
   }
+}
+
+
+
+
+
+.portfolio-page{
+  height: 15vh;
+  background-position: center;
+}
+
+.portfolio-content{
+  div{
+  
+    h2{
+      color: #61892f;
+      text-align: center;
+      font-size: 4vh;
+      padding-bottom: 50px;
+    }
+    img{
+      max-width: 60%;
+      padding-bottom: 100px;
+    }
+  }
+
 }

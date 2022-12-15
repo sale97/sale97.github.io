@@ -2,14 +2,16 @@ footer {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
   padding-bottom: 30px;
   padding-top: 20px;
-  .footer-text{
-    p{
+
+  .footer-text {
+    p {
       color: #939596;
-      font-size: 1.5vh;
+      font-size: 1.8vh;
       padding-top: 10px;
       margin-bottom: 0;
     }
   }
+
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -17,13 +19,15 @@ footer {
 
   .footer-social {
     display: flex;
-    justify-content: space-between;
     max-width: 200px;
     margin: 0 auto;
+
     a {
       img {
         width: 4.5vh;
         margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }
