@@ -501,8 +501,10 @@ footer .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 200px;
   margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .footer-social a img {
