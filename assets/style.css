@@ -210,7 +210,7 @@ nav .effect {
 }
 
 nav a img {
-  max-width: 35px;
+  max-width: 4.1vh;
 }
 
 .effect {
@@ -468,10 +468,24 @@ a {
   background-position: center;
 }
 
+.portfolio-content h3 {
+  font-size: 3vh;
+  padding-left: 40vh;
+  text-align: left;
+}
+
+.portfolio-content p {
+  text-align: left;
+  padding-left: 40vh;
+  font-size: 2vh;
+  color: #939596;
+  font-weight: 500;
+}
+
 .portfolio-content div h2 {
   color: #61892f;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   padding-bottom: 50px;
 }
 
@@ -508,7 +522,7 @@ footer .footer-social {
 }
 
 footer .footer-social a img {
-  width: 4.5vh;
+  width: 4.1vh;
   margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;

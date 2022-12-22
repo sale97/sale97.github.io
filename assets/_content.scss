@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-.nav-mob{
+.nav-mob {
   display: none;
 }
 
@@ -35,23 +35,34 @@ a {
 
 #myBtn {
   display: none;
-  
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgba(255, 0, 0, 0); /* Set a background color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  img{
+
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgba(255, 0, 0, 0);
+  /* Set a background color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+
+  /* Some padding */
+  img {
     max-width: 5.5vh;
   }
 }
 
 #myBtn:hover {
-  background-color: rgba(85, 85, 85, 0); /* Add a dark-grey background on hover */
+  background-color: rgba(85, 85, 85, 0);
+  /* Add a dark-grey background on hover */
 }
 
 
@@ -156,10 +167,11 @@ a {
 
     .port1 {
       justify-content: center;
-      .port-left{
+
+      .port-left {
         margin-right: 20px;
       }
-     
+
     }
 
     img {
@@ -211,7 +223,7 @@ a {
   }
 }
 
-.found{
+.found {
   display: none;
   text-align: center;
   background-image: url(./img/branch_leaves_tropical_174042_3840x2160.jpg);
@@ -221,11 +233,13 @@ a {
   padding-bottom: 50px;
   margin-bottom: 50px;
   margin-top: 100px;
-  h3{
+
+  h3 {
     font-size: 30px;
     font-weight: 600;
   }
-  p{
+
+  p {
     color: #939596;
     font-weight: 500;
     font-size: 20px;
@@ -237,25 +251,40 @@ a {
 
 
 
-.portfolio-page{
+.portfolio-page {
   height: 15vh;
   background-position: center;
 }
 
-.portfolio-content{
-  div{
-  
-    h2{
+.portfolio-content {
+
+  h3 {
+    font-size: 3vh;
+    padding-left: 40vh;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    padding-left: 40vh;
+    font-size: 2vh;
+    color: #939596;
+    font-weight: 500;
+  }
+
+  div {
+
+    h2 {
       color: #61892f;
       text-align: center;
-      font-size: 4vh;
+      font-size: 3vh;
       padding-bottom: 50px;
     }
-    img{
+
+    img {
       max-width: 60%;
       padding-bottom: 100px;
     }
   }
 
 }
-
