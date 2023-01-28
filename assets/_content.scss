@@ -82,10 +82,10 @@ a {
 
   }
 
+
   .fields-p {
     font-size: 2.2vh;
     letter-spacing: 1px;
-    padding-bottom: 100px;
     padding-top: 10px;
     text-align: center;
     display: flex;
@@ -112,6 +112,7 @@ a {
       }
 
     }
+
   }
 }
 
@@ -287,4 +288,37 @@ a {
     }
   }
 
+}
+
+.fields {
+  .fields-small {
+    font-size: 1.9vh;
+    letter-spacing: 1px;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+
+    .p1 {
+      padding-right: 15px;
+      text-align: left;
+
+      p {
+        padding: 2.5vh 14vh 2.5vh 3.5vh;
+        border: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: black;
+        font-weight: bold;
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
+        transition: background-color 0.5s;
+      }
+
+      p:hover {
+        background-color: #2d411656;
+      }
+
+    }
+  }
 }
