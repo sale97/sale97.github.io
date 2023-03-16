@@ -82,10 +82,10 @@ a {
 
   }
 
-
   .fields-p {
-    font-size: 2vh;
+    font-size: 2.2vh;
     letter-spacing: 1px;
+    padding-bottom: 100px;
     padding-top: 10px;
     text-align: center;
     display: flex;
@@ -97,7 +97,7 @@ a {
       text-align: left;
 
       p {
-        padding: 3vh 17.5vh 3vh 3vh;
+        padding: 3.5vh 17.5vh 3.5vh 4.5vh;
         border: solid;
         border-radius: 5px;
         border-width: 1px;
@@ -112,7 +112,6 @@ a {
       }
 
     }
-
   }
 }
 
@@ -120,7 +119,6 @@ a {
   text-align: center;
   max-width: 120vh;
   margin: 0 auto;
-  padding-top: 100px;
 
   h3 {
     font-size: 3vh;
@@ -173,6 +171,7 @@ a {
       .port-left {
         margin-right: 20px;
       }
+
 
     }
 
@@ -290,4 +289,3 @@ a {
   }
 
 }
-
