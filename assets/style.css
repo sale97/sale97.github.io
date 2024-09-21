@@ -399,8 +399,8 @@ a {
 
 footer {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -453,8 +453,8 @@ footer .footer-social a img {
     max-height: auto;
   }
   .about {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .fields .fields-p {
     display: grid;
@@ -464,15 +464,18 @@ footer .footer-social a img {
     padding: 15px;
   }
   .wall {
-    height: 115vh;
+    height: 100vh;
   }
   main {
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main button img {
+    display: none;
   }
   main p {
-    font-size: 3vh;
+    font-size: 2vh;
   }
   main h1 {
     font-size: 5vh;
@@ -480,7 +483,6 @@ footer .footer-social a img {
   header {
     display: flex;
     text-align: center;
-    padding-top: 50px;
   }
   header .nav-mob {
     display: inline-flex;

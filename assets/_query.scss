@@ -1,4 +1,5 @@
 @media (max-width: 800px) {
+  
   .portfolio {
     .port-grup {
       display: contents;
@@ -37,8 +38,8 @@
   }
 
   .about {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .fields {
@@ -53,16 +54,22 @@
   }
 
   .wall {
-    height: 115vh;
+    height: 100vh;
   }
 
   main {
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    button{
+      img{
+        display: none;
+      }
+    }
 
     p {
-      font-size: 3vh;
+      font-size: 2vh;
     }
 
     h1 {
@@ -73,7 +80,6 @@
   header {
     display: flex;
     text-align: center;
-    padding-top: 50px;
 
     .nav-mob {
       display: inline-flex;
