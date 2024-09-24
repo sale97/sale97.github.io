@@ -470,6 +470,7 @@ footer .footer-social a img {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 95%;
   }
   main button img {
     display: none;
@@ -483,6 +484,7 @@ footer .footer-social a img {
   header {
     display: flex;
     text-align: center;
+    max-width: 95%;
   }
   header .nav-mob {
     display: inline-flex;
