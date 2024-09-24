@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 70%;
   align-items: center;
 
   nav {
@@ -49,8 +49,9 @@ header {
 
 main {
   padding-top: 5%;
-  padding-left: 5%;
+  max-width: 70%;
   letter-spacing: 0.5px;
+  margin: 0 auto;
 
 
   .space {

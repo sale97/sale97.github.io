@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 70%;
   align-items: center;
 }
 header nav {
@@ -43,8 +43,9 @@ header img {
 
 main {
   padding-top: 5%;
-  padding-left: 5%;
+  max-width: 70%;
   letter-spacing: 0.5px;
+  margin: 0 auto;
 }
 main .space {
   padding-bottom: 10px;
@@ -321,7 +322,6 @@ a {
   font-size: 3vh;
   color: #61892f;
   font-weight: 600;
-  max-width: 50px;
 }
 .portfolio .port p {
   font-size: 2vh;
