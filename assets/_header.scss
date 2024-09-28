@@ -31,7 +31,7 @@ header {
     a {
       color: white;
       text-transform: uppercase;
-      font-size: 2.2vh;
+      font-size: 2.4vh;
       text-indent: 10px;
       font-weight: bold;
       margin-left: 20px;
@@ -65,7 +65,7 @@ main {
 
   .button {
     background-color: #60892f27;
-    font-size: 2.2vh;
+    font-size: 2.4vh;
     border-radius: 5px;
     color: white;
     padding: 2vh 4vh 2vh 4vh;
@@ -113,13 +113,13 @@ main {
   }
 
   p {
-    font-size: 2.2vh;
+    font-size: 2.4vh;
     font-weight: 600;
   }
 
   .p-white {
     color: white;
-    font-size: 2.2vh;
+    font-size: 2.4vh;
   }
 }
 
@@ -221,5 +221,5 @@ nav {
 
 .effect:hover {
   transform: scale(1.2);
-  opacity: 0.3;
+  opacity: 1;
 }

@@ -11,6 +11,8 @@ body {
 
 p {
   color: #61892f;
+  font-size: 2vh;
+  font-weight: 500;
 }
 
 h1 {
@@ -32,26 +34,16 @@ a {
 
 #myBtn {
   display: none;
-
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: rgba(255, 0, 0, 0);
-  /* Set a background color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
 
-  /* Some padding */
   img {
     max-width: 5.5vh;
   }
@@ -59,7 +51,6 @@ a {
 
 #myBtn:hover {
   background-color: rgba(85, 85, 85, 0);
-  /* Add a dark-grey background on hover */
 }
 
 .fields {
@@ -72,7 +63,7 @@ a {
   }
 
   .fields-p {
-    font-size: 2.2vh;
+    font-size: 2.4vh;
     letter-spacing: 1px;
     padding-bottom: 100px;
     padding-top: 10px;
@@ -103,9 +94,10 @@ a {
 }
 
 .about {
-  text-align: center;
+  text-align: left;
   max-width: 120vh;
   margin: 0 auto;
+  padding-bottom: 100px;
 
   h3 {
     font-size: 3vh;
@@ -259,4 +251,72 @@ a {
       padding-bottom: 100px;
     }
   }
+}
+
+.about-pic {
+  display: flex;
+  text-align: left;
+
+  img {
+    max-width: 24%;
+    border-radius: 5px;
+    margin-left: 50px;
+    position: relative;
+    top: -20px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
+  }
+}
+
+
+
+
+
+
+.experience {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 4px solid #61892F;
+  transition: all 0.3s ease;
+  max-width: 120vh;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
+  transition: background-color 0.5s;
+}
+
+.experience:hover {
+  background-color: #2d411656;
+}
+
+
+
+.experience h3 {
+  margin: 0 0 10px 0;
+  color: #61892F;
+}
+
+.experience h4 {
+  margin: 0 0 10px 0;
+  font-weight: normal;
+  color: #939596;
+}
+
+.experience p {
+  margin: 0;
+  color: #939596;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: #61892F;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.Work {
+  margin-bottom: -60px;
 }
