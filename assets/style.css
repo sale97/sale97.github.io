@@ -13,10 +13,10 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   max-width: 70%;
   align-items: center;
+  justify-content: space-between;
 }
 header nav {
   align-items: center;
@@ -29,7 +29,6 @@ header nav a:hover {
 header nav a {
   color: white;
   text-transform: uppercase;
-  font-size: 2.4vh;
   text-indent: 10px;
   font-weight: bold;
   margin-left: 20px;
@@ -37,7 +36,7 @@ header nav a {
   letter-spacing: 2px;
 }
 header img {
-  max-width: 11.5vh;
+  max-width: 10vh;
   margin-top: 10px;
 }
 
@@ -55,12 +54,13 @@ main .spacex2 {
 }
 main .button {
   background-color: rgba(96, 137, 47, 0.1529411765);
-  font-size: 2.4vh;
   border-radius: 5px;
   color: white;
   padding: 2vh 4vh 2vh 4vh;
   box-shadow: 5px 5px 33px #000000;
   position: inherit;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 main .button:after {
   content: "";
@@ -90,16 +90,15 @@ main .button:hover:before {
 }
 main h1 {
   color: white;
-  font-size: 8vh;
   max-width: 130vh;
+  font-size: 4rem;
 }
 main p {
-  font-size: 2.4vh;
   font-weight: 600;
+  font-size: 1.3rem;
 }
 main .p-white {
   color: white;
-  font-size: 2.4vh;
 }
 
 .hover-underline-animation {
@@ -145,7 +144,7 @@ main .p-white {
   margin-top: -75px;
 }
 .arrow a img {
-  max-width: 7.5vh;
+  max-width: 5.5vh;
 }
 
 nav .linkedin img {
@@ -153,10 +152,10 @@ nav .linkedin img {
 }
 nav .effect {
   padding-left: 0;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 nav a img {
-  max-width: 4.1vh;
+  max-width: 4vh;
 }
 
 .effect {
@@ -180,21 +179,24 @@ body {
 
 p {
   color: #61892f;
-  font-size: 2vh;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 h1 {
   color: #61892f;
+  font-size: 2.5rem;
 }
 
 h3 {
   color: #61892f;
+  font-size: 1.5rem;
 }
 
 a {
   color: #61892f;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .nav-mob {
@@ -205,7 +207,7 @@ a {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 5px;
   z-index: 99;
   border: none;
   outline: none;
@@ -214,7 +216,7 @@ a {
   padding: 15px;
 }
 #myBtn img {
-  max-width: 5.5vh;
+  max-width: 25%;
 }
 
 #myBtn:hover {
@@ -222,14 +224,12 @@ a {
 }
 
 .fields h1 {
-  font-size: 6vh;
   text-align: center;
   padding-top: 100px;
   letter-spacing: 1px;
   padding-bottom: 20px;
 }
 .fields .fields-p {
-  font-size: 2.4vh;
   letter-spacing: 1px;
   padding-bottom: 100px;
   padding-top: 10px;
@@ -243,6 +243,7 @@ a {
 }
 .fields .fields-p .p1 p {
   padding: 3.5vh 17.5vh 3.5vh 4.5vh;
+  font-size: 1.1rem;
   border: solid;
   border-radius: 5px;
   border-width: 1px;
@@ -261,11 +262,7 @@ a {
   margin: 0 auto;
   padding-bottom: 100px;
 }
-.about h3 {
-  font-size: 3vh;
-}
 .about p {
-  font-size: 2vh;
   color: #939596;
   font-weight: 500;
   padding-bottom: 20px;
@@ -273,7 +270,6 @@ a {
 
 .portfolio {
   text-align: center;
-  padding-top: 100px;
   margin-bottom: 100px;
 }
 .portfolio .port-grup {
@@ -287,9 +283,6 @@ a {
   width: 65%;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-.portfolio h3 {
-  font-size: 6vh;
 }
 .portfolio .port-grup {
   margin-left: 250px;
@@ -312,12 +305,10 @@ a {
   border-radius: 5px;
 }
 .portfolio .port a {
-  font-size: 3vh;
   color: #61892f;
   font-weight: 600;
 }
 .portfolio .port p {
-  font-size: 2vh;
   max-width: 65vh;
   font-weight: 500;
   color: #939596;
@@ -340,49 +331,24 @@ a {
   margin-top: 50px;
 }
 
-.found {
-  display: none;
-  text-align: center;
-  background-image: url(./img/branch_leaves_tropical_174042_3840x2160.jpg);
-  background-position: right;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.664);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  margin-top: 100px;
-}
-.found h3 {
-  font-size: 30px;
-  font-weight: 600;
-}
-.found p {
-  color: #939596;
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
 .portfolio-page {
   height: 15vh;
   background-position: center;
 }
 
 .portfolio-content h3 {
-  font-size: 3vh;
   padding-left: 40vh;
   text-align: left;
 }
 .portfolio-content p {
   text-align: left;
   padding-left: 40vh;
-  font-size: 2vh;
   color: #939596;
   font-weight: 500;
 }
 .portfolio-content div h2 {
   color: #61892f;
   text-align: center;
-  font-size: 3vh;
   padding-bottom: 50px;
 }
 .portfolio-content div img {
@@ -423,6 +389,7 @@ a {
 .experience h3 {
   margin: 0 0 10px 0;
   color: #61892F;
+  font-size: 1.2rem;
 }
 
 .experience h4 {
@@ -460,7 +427,7 @@ footer {
 }
 footer .footer-text p {
   color: #939596;
-  font-size: 1.8vh;
+  font-size: 1rem;
   padding-top: 10px;
   margin-bottom: 0;
 }
@@ -470,10 +437,10 @@ footer .footer-social {
   justify-content: center;
 }
 footer .footer-social a img {
-  width: 4.1vh;
+  width: 4vh;
   margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 @media (max-width: 800px) {
@@ -514,9 +481,13 @@ footer .footer-social a img {
     display: block;
     text-align: center;
   }
+  .about .about-pic p {
+    padding-bottom: 40px;
+  }
   .about .about-pic img {
     margin: 0;
     max-width: 50%;
+    margin-bottom: 50px;
   }
   .fields .fields-p {
     display: grid;
@@ -563,5 +534,8 @@ footer .footer-social a img {
   .experience {
     margin-left: 15px;
     margin-right: 15px;
+  }
+  .experience h3 span {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -14,10 +14,10 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   max-width: 70%;
   align-items: center;
+  justify-content: space-between;
 
   nav {
     align-items: center;
@@ -31,18 +31,16 @@ header {
     a {
       color: white;
       text-transform: uppercase;
-      font-size: 2.4vh;
       text-indent: 10px;
       font-weight: bold;
       margin-left: 20px;
       text-align: center;
       letter-spacing: 2px;
-
     }
   }
 
   img {
-    max-width: 11.5vh;
+    max-width: 10vh;
     margin-top: 10px;
   }
 }
@@ -65,12 +63,13 @@ main {
 
   .button {
     background-color: #60892f27;
-    font-size: 2.4vh;
     border-radius: 5px;
     color: white;
     padding: 2vh 4vh 2vh 4vh;
     box-shadow: 5px 5px 33px #000000;
     position: inherit;
+    font-size: 1.3rem;
+    font-weight: 600;
 
     &:after {
       content: '';
@@ -108,18 +107,17 @@ main {
 
   h1 {
     color: white;
-    font-size: 8vh;
     max-width: 130vh;
+    font-size: 4rem;
   }
 
   p {
-    font-size: 2.4vh;
     font-weight: 600;
+    font-size: 1.3rem;
   }
 
   .p-white {
     color: white;
-    font-size: 2.4vh;
   }
 }
 
@@ -191,7 +189,7 @@ main {
 
   a {
     img {
-      max-width: 7.5vh;
+      max-width: 5.5vh;
     }
   }
 }
@@ -205,12 +203,12 @@ nav {
 
   .effect {
     padding-left: 0;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   a {
     img {
-      max-width: 4.1vh;
+      max-width: 4vh;
     }
   }
 }

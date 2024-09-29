@@ -11,22 +11,26 @@ body {
 
 p {
   color: #61892f;
-  font-size: 2vh;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 h1 {
   color: #61892f;
+  font-size: 2.5rem;
 }
 
 h3 {
   color: #61892f;
+  font-size: 1.5rem;
 }
 
 a {
   color: #61892f;
   text-decoration: none;
+  font-size: 1.2rem;
 }
+
 
 .nav-mob {
   display: none;
@@ -36,7 +40,7 @@ a {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 5px;
   z-index: 99;
   border: none;
   outline: none;
@@ -45,7 +49,7 @@ a {
   padding: 15px;
 
   img {
-    max-width: 5.5vh;
+    max-width: 25%;
   }
 }
 
@@ -55,7 +59,6 @@ a {
 
 .fields {
   h1 {
-    font-size: 6vh;
     text-align: center;
     padding-top: 100px;
     letter-spacing: 1px;
@@ -63,7 +66,6 @@ a {
   }
 
   .fields-p {
-    font-size: 2.4vh;
     letter-spacing: 1px;
     padding-bottom: 100px;
     padding-top: 10px;
@@ -77,6 +79,7 @@ a {
 
       p {
         padding: 3.5vh 17.5vh 3.5vh 4.5vh;
+        font-size: 1.1rem;
         border: solid;
         border-radius: 5px;
         border-width: 1px;
@@ -99,12 +102,8 @@ a {
   margin: 0 auto;
   padding-bottom: 100px;
 
-  h3 {
-    font-size: 3vh;
-  }
 
   p {
-    font-size: 2vh;
     color: #939596;
     font-weight: 500;
     padding-bottom: 20px;
@@ -113,7 +112,6 @@ a {
 
 .portfolio {
   text-align: center;
-  padding-top: 100px;
   margin-bottom: 100px;
 
   .port-grup {
@@ -130,9 +128,6 @@ a {
     margin-bottom: 50px;
   }
 
-  h3 {
-    font-size: 6vh;
-  }
 
   .port-grup {
     margin-left: 250px;
@@ -159,13 +154,11 @@ a {
     }
 
     a {
-      font-size: 3vh;
       color: #61892f;
       font-weight: 600;
     }
 
     p {
-      font-size: 2vh;
       max-width: 65vh;
       font-weight: 500;
       color: #939596;
@@ -194,29 +187,6 @@ a {
   }
 }
 
-.found {
-  display: none;
-  text-align: center;
-  background-image: url(./img/branch_leaves_tropical_174042_3840x2160.jpg);
-  background-position: right;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.664);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  margin-top: 100px;
-
-  h3 {
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  p {
-    color: #939596;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 1px;
-  }
-}
 
 .portfolio-page {
   height: 15vh;
@@ -225,7 +195,6 @@ a {
 
 .portfolio-content {
   h3 {
-    font-size: 3vh;
     padding-left: 40vh;
     text-align: left;
   }
@@ -233,7 +202,6 @@ a {
   p {
     text-align: left;
     padding-left: 40vh;
-    font-size: 2vh;
     color: #939596;
     font-weight: 500;
   }
@@ -242,7 +210,6 @@ a {
     h2 {
       color: #61892f;
       text-align: center;
-      font-size: 3vh;
       padding-bottom: 50px;
     }
 
@@ -271,7 +238,6 @@ a {
 
 
 
-
 .experience {
   margin-bottom: 30px;
   padding: 20px;
@@ -294,6 +260,7 @@ a {
 .experience h3 {
   margin: 0 0 10px 0;
   color: #61892F;
+  font-size: 1.2rem;
 }
 
 .experience h4 {
