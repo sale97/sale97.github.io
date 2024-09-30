@@ -16,6 +16,10 @@
   <!-- Main container -->
   <div class="wall">
 
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="assets/img/bc-video.mp4" type="video/mp4">
+    </video>
+
     <!-- Header section -->
     <header>
       <!-- Logo -->
@@ -24,7 +28,7 @@
       </div>
 
       <!-- Navigation menu -->
-      <nav>
+      <nav class="hidden">
         <!-- Internal links -->
         <a class="hover-underline-animation text-focus-in" href="#about">About</a>
         <a class="hover-underline-animation text-focus-in" href="#portfolio">My Works</a>
@@ -52,7 +56,7 @@
       </nav>
 
       <!-- Mobile navigation -->
-      <div class="nav-mob">
+      <div class="nav-mob hidden">
         <a class="hover-underline-animation text-focus-in" href="#about">About</a>
         <a class="hover-underline-animation text-focus-in" href="#portfolio">My Works</a>
       </div>
@@ -62,26 +66,24 @@
     <main>
       <!-- "Back to top" button -->
       <button class="text-focus-in" onclick="topFunction()" id="myBtn" title="Go to top">
-        <img class="effect" src="assets/img/top.png" alt="">
+        <img class="effect" src="assets/img/top.png" alt="Back to top">
       </button>
 
       <!-- Introduction section -->
       <p class="text-focus-in">Hello! I'm Aleksandar Todorovic</p>
 
-      <h1 class="text-focus-in">Front-End Web Developer & Web Designer</h1>
+      <h1 class="text-focus-in" id="auto-type"></h1>
 
-      <p class="p-white text-focus-in">I bring ideas to life through beautifully crafted websites. Let's turn your
-        vision into a stunning reality.</p>
+      <p class="p-white text-focus-in">I bring ideas to life through beautifully crafted websites. Let's turn
+        your vision into a stunning reality.</p>
 
-      <p class="text-focus-in ">Email: atodotovic97@gmail.com</p>
-      <div class="spacex2">
-      </div>
+      <p class="text-focus-in">Email: <a href="mailto:atodotovic97@gmail.com">atodotovic97@gmail.com</a></p>
+      <div class="spacex2"></div>
 
       <a class="button text-focus-in" href="mailto:atodotovic97@gmail.com">
         Get in Touch
       </a>
-      <div class=" spacex2">
-      </div>
+
     </main>
 
   </div>
@@ -98,30 +100,30 @@
       <h1>My Skills</h1>
 
       <!-- Skills list -->
-      <div class="fields-p">
+      <div class="fields-p hidden">
 
-        <div class="p1">
-          <p>React</p>
-          <p>WordPress</p>
+        <div class="p1 hidden">
+          <p> <img src="assets/img/react.png" alt="">React Js</p>
+          <p> <img src="assets/img/wordpress.png" alt="">WordPress</p>
         </div>
 
 
-        <div class="p1">
-          <p>HTML/ CSS</p>
-          <p>Sass/ Scss</p>
+        <div class="p1 hidden">
+          <p> <img src="assets/img/html.png" alt="">HTML/ CSS</p>
+          <p> <img src="assets/img/sass.png" alt="">Sass/ Scss</p>
         </div>
 
         <div class="p1">
-          <p>JavaScript</p>
-          <p>Git, Github</p>
+          <p> <img src="assets/img/javaScript.png" alt="">JavaScript</p>
+          <p> <img src="assets/img/git.png" alt="">Git, Github</p>
         </div>
 
       </div>
 
       <!-- About me section -->
-      <div class="about">
+      <div class="about hidden">
 
-        <h3>Allow me to introduce myself</h3>
+        <h3 class="hidden">Allow me to introduce myself</h3>
 
         <div class="about-pic">
 
@@ -139,20 +141,20 @@
         </div>
 
 
-        <h3 class="Work">Work Experience</h3>
+        <h3 class="Work hidden">Work Experience</h3>
 
       </div>
 
 
 
-      <div id="experience-container">
+      <div id="experience-container" class="hidden">
         <!-- Experience entries will be dynamically added here -->
       </div>
 
 
       <!-- Portfolio section -->
       <div class="portfolio">
-        <div id="portfolio"></div>
+
         <h1>
           My Works
         </h1>
@@ -160,32 +162,13 @@
         <div class="line"></div>
 
         <!-- Portfolio items -->
-        <div class="port-grup">
-          <div class="port ">
-            <a class="hover-underline-animation" href="#">todbuy.shop</a>
-            <p>WordPress, Ecommerce, Css, Photoshop</p>
-            <div class="port1">
-              <a href="#"><img class="grow port-left" src="assets/img/dropship.png" alt=""></a>
-            </div>
 
-          </div>
+
+        <div class="port-grup hidden">
 
           <div class="port">
-            <a class="hover-underline-animation" href="https://newlook.rs/">newlook.rs</a>
-            <p>HTML/ Css/ Js</p>
-            <div class="port1">
-              <a href="https://newlook.rs/"><img class="grow port-right"
-                  src="assets/img/screencapture-newlook-rs-proizvodi-2020-06-02-22_04_56.png" alt=""></a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="port-grup">
-
-          <div class="port ">
             <a class="hover-underline-animation" href="https://github.com/sale97/Scooter">Scooter</a>
-            <p>Custom WordPress Theme using: PHP, HTML/ Css, Sass and JS</p>
+            <p>Custom WordPress Theme</p>
             <div class="port1">
               <a href="https://github.com/sale97/Newlook-aca.git">
                 <img class="grow port-left" src="assets/img/scoo-hom-prew.png" alt=""></a>
@@ -193,7 +176,7 @@
 
           </div>
 
-          <div class="port">
+          <div class="port hidden">
             <a class="hover-underline-animation" href="https://github.com/sale97/OnchainZ.git">On Chainz</a>
             <p>HTML/ Css/ Js</p>
             <div class="port1">
@@ -204,21 +187,40 @@
           </div>
         </div>
 
-        <div class="port-grup">
-
+        <div class="port-grup hidden">
           <div class="port ">
-            <a class="hover-underline-animation" href="#">Midnight Pass</a>
-            <p>Hotel website using: HTML/ Css/ Js</p>
+            <a class="hover-underline-animation" href="#">todbuy.shop</a>
+            <p>eCommerce Website</p>
             <div class="port1">
-              <a href="#"><img class="grow port-left" src="assets/img/hotel-prew.png" alt=""></a>
+              <a href="#"><img class="grow port-left" src="assets/img/dropship.png" alt=""></a>
             </div>
 
           </div>
 
+          <div class="port hidden">
+            <a class="hover-underline-animation" href="https://newlook.rs/">newlook.rs</a>
+            <p>HTML/ Css/ Js</p>
+            <div class="port1">
+              <a href="https://newlook.rs/"><img class="grow port-right"
+                  src="assets/img/screencapture-newlook-rs-proizvodi-2020-06-02-22_04_56.png" alt=""></a>
+            </div>
+
+          </div>
+        </div>
+        <div class="port-grup hidden">
+
           <div class="port">
+            <a class="hover-underline-animation" href="#">Startuprr</a>
+            <p>Custom WordPress Theme</p>
+            <div class="port1">
+              <a href="#"><img class="grow port-left" src="assets/img/starupr.jpg" alt=""></a>
+            </div>
+
+          </div>
+
+          <div class="port hidden">
             <a class="hover-underline-animation" href="#">Infernalboost</a>
-            <p>Boosting website using: HTML/ Css/ Js
-              (In progress)
+            <p>LOL Boosting Website
             </p>
             <div class="port1">
               <a href="#"><img class="grow port-right" src="assets/img/infernal-prew.png" alt=""></a>
@@ -233,10 +235,8 @@
 
       <!-- Footer -->
       <footer>
-        <div class="footer-nav">
 
-        </div>
-        <div class="footer-social">
+        <div class="footer-social hidden">
 
           <a class="effect text-focus-in" target="_blank"
             href="https://www.linkedin.com/in/aleksandar-todorovic-b96985197/">
@@ -259,7 +259,7 @@
 
         </div>
 
-        <div class="footer-text">
+        <div class="footer-text hidden">
           <p>Copyright © 2024 A.tod Powered by Aleksandar Todorovic</p>
         </div>
 
