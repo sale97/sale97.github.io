@@ -1,14 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap");
 .wall {
-  background-image: url(../assets/img/321312312321.jpg);
-  background-size: cover;
   height: 100vh;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.493);
 }
 
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
 body {
   font-family: poppins;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 header {
@@ -92,6 +121,19 @@ main h1 {
   color: white;
   max-width: 130vh;
   font-size: 4rem;
+  white-space: nowrap;
+}
+main h1::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main p {
   font-weight: 600;
@@ -127,7 +169,7 @@ main .p-white {
 }
 
 .text-focus-in {
-  animation: text-focus-in 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 @keyframes text-focus-in {
   0% {
@@ -251,6 +293,12 @@ a {
   font-weight: bold;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
   transition: background-color 0.5s;
+  align-items: center;
+}
+.fields .fields-p .p1 p img {
+  max-width: 5vh;
+  margin-bottom: -1.5vh;
+  padding-right: 1vh;
 }
 .fields .fields-p .p1 p:hover {
   background-color: rgba(45, 65, 22, 0.337254902);
@@ -365,7 +413,7 @@ a {
   border-radius: 5px;
   margin-left: 50px;
   position: relative;
-  top: -20px;
+  top: -60px;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
 }
 
@@ -488,6 +536,7 @@ footer .footer-social a img {
     margin: 0;
     max-width: 50%;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
   .fields .fields-p {
     display: grid;
@@ -513,6 +562,7 @@ footer .footer-social a img {
   }
   main h1 {
     font-size: 5vh;
+    white-space: wrap;
   }
   header {
     display: flex;
@@ -537,5 +587,20 @@ footer .footer-social a img {
   }
   .experience h3 span {
     margin-left: 0;
+  }
+}
+@media (max-width: 1550px) {
+  header {
+    max-width: 80%;
+  }
+  main {
+    max-width: 80%;
+    padding-top: 2%;
+  }
+  .arrow {
+    margin-top: -50px;
+  }
+  #myBtn img {
+    max-width: 18%;
   }
 }/*# sourceMappingURL=style.css.map */

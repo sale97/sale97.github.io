@@ -58,6 +58,7 @@
         margin: 0;
         max-width: 50%;
         margin-bottom: 50px;
+        margin-top: 50px;
       }
     }
   }
@@ -95,6 +96,7 @@
 
     h1 {
       font-size: 5vh;
+      white-space: wrap;
     }
   }
 
@@ -127,6 +129,27 @@
       span {
         margin-left: 0;
       }
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  header {
+    max-width: 80%;
+  }
+
+  main {
+    max-width: 80%;
+    padding-top: 2%;
+  }
+
+  .arrow {
+    margin-top: -50px;
+  }
+
+  #myBtn {
+    img {
+      max-width: 18%;
     }
   }
 }

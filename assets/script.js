@@ -55,5 +55,64 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+//Scroll animation
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+
+// auto typing effect
+const phrases = [
+  "Front-end Web Developer",
+  "And Web Designer"
+];
+
+let currentPhraseIndex = 0;
+let currentCharIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100; // milliseconds
+
+function typeText() {
+  const currentPhrase = phrases[currentPhraseIndex];
+  const typingElement = document.getElementById('auto-type');
+
+  if (isDeleting) {
+      typingElement.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+      currentCharIndex--;
+  } else {
+      typingElement.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+      currentCharIndex++;
+  }
+
+  if (!isDeleting && currentCharIndex === currentPhrase.length) {
+      isDeleting = true;
+      typingSpeed = 50; // Faster deletion speed
+      setTimeout(typeText, 1500); // Pause before deleting
+  } else if (isDeleting && currentCharIndex === 0) {
+      isDeleting = false;
+      currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+      typingSpeed = 100; // Reset to normal typing speed
+      setTimeout(typeText, 500); // Pause before typing next phrase
+  } else {
+      setTimeout(typeText, typingSpeed);
+  }
+}
+
+// Start the typing effect when the page loads
+window.onload = typeText;
+
 
 
