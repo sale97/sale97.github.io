@@ -494,6 +494,34 @@ footer .footer-social a img {
   margin-right: 5px;
 }
 
+@media (max-width: 1550px) {
+  .portfolio .line {
+    max-width: 80%;
+  }
+  .portfolio .port-grup {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .about {
+    max-width: 80%;
+  }
+  header {
+    max-width: 80%;
+  }
+  .experience {
+    max-width: 80%;
+  }
+  main {
+    max-width: 80%;
+    padding-top: 2%;
+  }
+  .arrow {
+    margin-top: -50px;
+  }
+  #myBtn img {
+    max-width: 18%;
+  }
+}
 @media (max-width: 800px) {
   .portfolio .port-grup {
     display: contents;
@@ -520,7 +548,7 @@ footer .footer-social a img {
     margin-left: 0;
   }
   .portfolio .port-grup .port .port1 a img {
-    max-width: 350px;
+    max-width: 85%;
     max-height: auto;
   }
   .about {
@@ -590,33 +618,5 @@ footer .footer-social a img {
   }
   .experience h3 span {
     margin-left: 0;
-  }
-}
-@media (max-width: 1550px) {
-  .portfolio .line {
-    max-width: 80%;
-  }
-  .portfolio .port-grup {
-    margin: 0 auto;
-    max-width: 80%;
-  }
-  .about {
-    max-width: 80%;
-  }
-  header {
-    max-width: 80%;
-  }
-  .experience {
-    max-width: 80%;
-  }
-  main {
-    max-width: 80%;
-    padding-top: 2%;
-  }
-  .arrow {
-    margin-top: -50px;
-  }
-  #myBtn img {
-    max-width: 18%;
   }
 }/*# sourceMappingURL=style.css.map */
