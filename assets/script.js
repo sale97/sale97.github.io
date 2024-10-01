@@ -26,14 +26,14 @@ const experiences = [
     title: "Front-end Web Developer",
     company: "Fiverr",
     period: "2020, March - Present",
-    duties: "Provide website maintenance and enhancements, using HTML, JavaScript, and CSS to bring concepts to life. Collaborate with clients to transform design mockups (Figma, XD, PSD) into fully responsive, pixel-perfect websites. Optimize websites for speed and performance, ensuring cross-browser compatibility and mobile responsiveness. Implement custom WordPress themes and perform content updates, plugin installations, and troubleshooting.",
+    duties: "Provide website maintenance and enhancements using HTML, JavaScript, and CSS. Convert design mockups (Figma, XD, PSD) into responsive, pixel-perfect websites. Optimize for speed, cross-browser compatibility, and mobile responsiveness. Implement custom WordPress themes and handle content updates, plugin installations, and troubleshooting.",
     type: "Freelance"
   },
   {
     title: "Junior Front-end Web Developer",
     company: "NewLook Entertainment, Belgrade",
     period: "2020, May - 2020, August",
-    duties: "Provide website maintenance and enhancements, using HTML, JavaScript, and CSS to bring concepts to life. Collaborate with clients to transform design mockups (Figma, XD, PSD) into fully responsive, pixel-perfect websites. Optimize websites for speed and performance, ensuring cross-browser compatibility and mobile responsiveness. Implement custom WordPress themes and perform content updates, plugin installations, and troubleshooting.",
+    duties: "Provide website maintenance and enhancements using HTML, JavaScript, and CSS. Convert design mockups (Figma, XD, PSD) into responsive, pixel-perfect websites. Optimize for speed, cross-browser compatibility, and mobile responsiveness. Implement custom WordPress themes and handle content updates, plugin installations, and troubleshooting.",
     type: "Full-time"
   }
 ];

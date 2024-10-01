@@ -134,7 +134,30 @@
 }
 
 @media (max-width: 1550px) {
+
+  .portfolio {
+    .line {
+      max-width: 80%;
+    }
+
+    .port-grup {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  }
+
+
+
+
+  .about {
+    max-width: 80%;
+  }
+
   header {
+    max-width: 80%;
+  }
+
+  .experience {
     max-width: 80%;
   }
 

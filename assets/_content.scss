@@ -106,7 +106,7 @@ a {
 
 .about {
   text-align: left;
-  max-width: 120vh;
+  max-width: 60%;
   margin: 0 auto;
   padding-bottom: 100px;
 
@@ -138,8 +138,8 @@ a {
 
 
   .port-grup {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin: 0 auto;
+    max-width: 70%;
   }
 
   .port {
@@ -170,7 +170,7 @@ a {
       max-width: 65vh;
       font-weight: 500;
       color: #939596;
-      padding-bottom: 50px;
+      padding-bottom: 20px;
       text-align: left;
       margin-bottom: 0;
     }
@@ -234,14 +234,15 @@ a {
 
   img {
     max-width: 24%;
+    height: auto;
+    object-fit: cover;
     border-radius: 5px;
     margin-left: 50px;
     position: relative;
-    top: -60px;
+    top: -50px;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
   }
 }
-
 
 
 
@@ -251,7 +252,7 @@ a {
   padding: 20px;
   border-left: 4px solid #61892F;
   transition: all 0.3s ease;
-  max-width: 120vh;
+  max-width: 60%;
   margin: 0 auto;
   margin-bottom: 60px;
   border-radius: 5px;
