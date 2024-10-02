@@ -612,6 +612,8 @@ footer .footer-social a img {
   .experience {
     margin-left: 15px;
     margin-right: 15px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   .experience h3 span {
     margin-left: 0;
