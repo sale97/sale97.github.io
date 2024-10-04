@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap");
 .wall {
   height: 100vh;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.48);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.555);
+  background: url(./img/321312312321.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.back-video {
+/* .back-video {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
+  display: none;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -17,21 +23,22 @@
     height: auto;
   }
 }
+
 @media (max-aspect-ratio: 16/9) {
   .back-video {
     width: auto;
     height: 100%;
   }
-}
+}*/
 body {
   font-family: poppins;
 }
 
 .hidden {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
+  filter: blur(15px);
+  transform: translateX(-50%);
+  transition: all 0.8s;
 }
 
 .show {
@@ -74,6 +81,10 @@ main {
   max-width: 70%;
   letter-spacing: 0.5px;
   margin: 0 auto;
+}
+main p .hover-underline-animation {
+  color: #61892f;
+  margin-bottom: 5vh;
 }
 main .space {
   padding-bottom: 10px;
@@ -423,7 +434,7 @@ a {
 .experience {
   margin-bottom: 30px;
   padding: 20px;
-  border-left: 4px solid #61892F;
+  border-left: 4px solid #61892f;
   transition: all 0.3s ease;
   max-width: 60%;
   margin: 0 auto;
@@ -439,7 +450,7 @@ a {
 
 .experience h3 {
   margin: 0 0 10px 0;
-  color: #61892F;
+  color: #61892f;
   font-size: 1.2rem;
 }
 
@@ -457,7 +468,7 @@ a {
 .badge {
   display: inline-block;
   padding: 2px 8px;
-  background-color: #61892F;
+  background-color: #61892f;
   color: white;
   border-radius: 4px;
   font-size: 0.8em;
@@ -581,6 +592,9 @@ footer .footer-social a img {
     padding-left: 10px;
     padding-right: 10px;
     max-width: 95%;
+  }
+  main #auto-type {
+    height: 15vh;
   }
   main button img {
     display: none;

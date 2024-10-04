@@ -1,12 +1,10 @@
 @media (max-width: 1550px) {
-
   .portfolio {
     .port-grup {
       margin: 0 auto;
       max-width: 70%;
     }
   }
-
 
   .about {
     max-width: 70%;
@@ -36,10 +34,7 @@
   }
 }
 
-
-
 @media (max-width: 800px) {
-
   .portfolio {
     .port-grup {
       display: contents;
@@ -72,12 +67,10 @@
             img {
               max-width: 85%;
               max-height: auto;
-
             }
           }
         }
       }
-
     }
   }
 
@@ -123,6 +116,10 @@
     padding-left: 10px;
     padding-right: 10px;
     max-width: 95%;
+
+    #auto-type {
+      height: 15vh;
+    }
 
     button {
       img {
