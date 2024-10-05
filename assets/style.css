@@ -260,7 +260,7 @@ a {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 5px;
+  right: -50px;
   z-index: 99;
   border: none;
   outline: none;
@@ -299,10 +299,10 @@ a {
   font-size: 1.1rem;
   border: solid;
   border-radius: 5px;
-  border-width: 1px;
+  border-width: 0px;
   border-color: black;
   font-weight: bold;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.589);
   transition: background-color 0.5s;
   align-items: center;
 }
@@ -314,12 +314,18 @@ a {
 .fields .fields-p .p1 p:hover {
   background-color: rgba(45, 65, 22, 0.337254902);
 }
+.fields .fields-p .p1-right {
+  padding-right: 0;
+}
 
 .about {
   text-align: left;
   max-width: 60%;
   margin: 0 auto;
   padding-bottom: 100px;
+  padding: 20px;
+  margin-bottom: 100px;
+  border-radius: 5px;
 }
 .about p {
   color: #939596;
@@ -362,6 +368,7 @@ a {
   height: auto;
   max-width: 65.5vh;
   border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.989);
 }
 .portfolio .port a {
   color: #61892f;
