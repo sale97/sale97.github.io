@@ -109,16 +109,21 @@ a {
   text-align: left;
   max-width: 60%;
   margin: 0 auto;
-  padding-bottom: 100px;
   padding: 20px;
   margin-bottom: 100px;
   border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.589);
+  transition: background-color 0.5s;
 
   p {
     color: #939596;
     font-weight: 500;
     padding-bottom: 20px;
   }
+}
+
+.about:hover {
+  background-color: #2d411656;
 }
 
 .portfolio {
@@ -290,6 +295,8 @@ a {
   margin-left: 10px;
 }
 
-.Work {
-  margin-bottom: -60px;
+.work {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }

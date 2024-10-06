@@ -15,20 +15,20 @@ window.onscroll = function () {
 
 const experiences = [
   {
-    title: "Operator at Payment Point",
-    company: "Admiralbet",
-    period: "2022, August - Present",
-    duties:
-      "Full-time position handling payments, customer inquiries, and account transactions. Ensured accurate processing of payments and maintained customer satisfaction at the payment point.",
-    type: "Full-time",
-  },
-  {
     title: "Front-end Web Developer",
     company: "Fiverr",
     period: "2020, March - Present",
     duties:
       "Provide website maintenance and enhancements using HTML, JavaScript, and CSS. Convert design mockups (Figma, XD, PSD) into responsive, pixel-perfect websites. Optimize for speed, cross-browser compatibility, and mobile responsiveness. Implement custom WordPress themes and handle content updates, plugin installations, and troubleshooting.",
     type: "Freelance",
+  },
+  {
+    title: "Operator at Payment Point",
+    company: "Admiralbet",
+    period: "2022, August - Present",
+    duties:
+      "Full-time position handling payments, customer inquiries, and account transactions. Ensured accurate processing of payments and maintained customer satisfaction at the payment point.",
+    type: "Full-time",
   },
   {
     title: "Junior Front-end Web Developer",
