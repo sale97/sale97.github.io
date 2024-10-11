@@ -1,4 +1,7 @@
 @media (max-width: 1550px) {
+  .work {
+    max-width: 70%;
+  }
   .portfolio {
     .port-grup {
       margin: 0 auto;
@@ -89,7 +92,7 @@
 
       img {
         margin: 0;
-        max-width: 50%;
+        max-width: 80%;
         margin-bottom: 50px;
         margin-top: 50px;
       }

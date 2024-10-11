@@ -325,7 +325,6 @@ a {
   padding: 20px;
   margin-bottom: 100px;
   border-radius: 5px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.589);
   transition: background-color 0.5s;
 }
 .about p {
@@ -520,6 +519,9 @@ footer .footer-social a img {
 }
 
 @media (max-width: 1550px) {
+  .work {
+    max-width: 70%;
+  }
   .portfolio .port-grup {
     margin: 0 auto;
     max-width: 70%;
@@ -587,7 +589,7 @@ footer .footer-social a img {
   }
   .about .about-pic img {
     margin: 0;
-    max-width: 50%;
+    max-width: 80%;
     margin-bottom: 50px;
     margin-top: 50px;
   }
