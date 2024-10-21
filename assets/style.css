@@ -546,6 +546,20 @@ footer .footer-social a img {
     max-width: 18%;
   }
 }
+@media (min-width: 1000px) and (max-width: 1300px) {
+  nav a {
+    font-size: 1rem;
+  }
+  nav a img {
+    max-width: 25px;
+  }
+  main p {
+    font-size: 1.1rem;
+  }
+  main h1 {
+    font-size: 2.8rem;
+  }
+}
 @media (max-width: 800px) {
   .portfolio .port-grup {
     display: contents;
