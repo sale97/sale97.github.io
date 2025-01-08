@@ -192,4 +192,20 @@
       }
     }
   }
+
+  .social-mob {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 90vh;
+
+    a {
+      img {
+        max-width: 35px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
 }

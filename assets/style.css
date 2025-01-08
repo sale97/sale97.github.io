@@ -492,6 +492,10 @@ a {
   padding-bottom: 30px;
 }
 
+.social-mob {
+  display: none;
+}
+
 footer {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
   padding-bottom: 20px;
@@ -512,7 +516,7 @@ footer .footer-social {
   justify-content: center;
 }
 footer .footer-social a img {
-  width: 32px;
+  width: 35px;
   margin-top: 30px;
   margin-left: 5px;
   margin-right: 5px;
@@ -661,5 +665,17 @@ footer .footer-social a img {
   }
   .experience h3 span {
     margin-left: 0;
+  }
+  .social-mob {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 90vh;
+  }
+  .social-mob a img {
+    max-width: 35px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
