@@ -93,40 +93,53 @@ main .spacex2 {
   padding-bottom: 40px;
 }
 main .button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;
   background-color: rgba(96, 137, 47, 0.1529411765);
-  border-radius: 5px;
   color: white;
-  padding: 2vh 4vh 2vh 4vh;
-  box-shadow: 5px 5px 33px #000000;
-  position: inherit;
+  padding: 2vh 4vh;
   font-size: 1.3rem;
   font-weight: 600;
+  box-shadow: 5px 5px 33px #000000;
+  text-decoration: none;
+  z-index: 0;
 }
-main .button:after {
+main {
+  /* background layer */
+}
+main .button::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(96, 137, 47, 0.0901960784);
-  z-index: -2;
-  border-radius: 8px;
+  z-index: 0;
 }
-main .button:before {
+main {
+  /* hover layer */
+}
+main .button::before {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: rgb(56.6711956522, 80.0407608696, 27.4592391304);
-  transition: all 0.3s;
-  border-radius: 8px;
-  z-index: -1;
+  inset: 0;
+  background-color: rgba(74, 111, 34, 0.6352941176);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
 }
-main .button:hover:before {
-  width: 100%;
+main {
+  /* hover effect */
+}
+main .button:hover::before {
+  transform: scaleX(1);
+}
+main {
+  /* TEXT FIX (IMPORTANT) */
+}
+main .button {
+  isolation: isolate;
 }
 main h1 {
   color: white;
@@ -500,15 +513,17 @@ footer {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
   padding-bottom: 20px;
   padding-top: 10px;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
 }
 footer .footer-text p {
   color: #939596;
   font-size: 1rem;
   padding-top: 10px;
   margin-bottom: 0;
+}
+footer {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 footer .footer-social {
   display: flex;
