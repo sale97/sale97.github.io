@@ -2,14 +2,14 @@
 
 .wall {
   height: 100vh;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.575);
-  background: url(./img/586086-blur-abstract.jpg);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.555);
+  background: url(./img/321312312321.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* samo za desktop */
+/* fixed samo za desktop */
 @media (min-width: 768px) {
   .wall {
     background-attachment: fixed;
@@ -83,7 +83,7 @@ header {
   }
 
   img {
-    max-width: 13vh;
+    max-width: 10vh;
     margin-top: 10px;
   }
 }
@@ -93,7 +93,6 @@ main {
   max-width: 70%;
   letter-spacing: 0.5px;
   margin: 0 auto;
-  text-align: center;
 
   p {
     .hover-underline-animation {
@@ -161,8 +160,11 @@ main {
     max-width: 130vh;
     font-size: 4rem;
     white-space: nowrap;
-    margin: 0 auto;
-    max-width: 1300px;
+  }
+
+  h1::after {
+    content: '|';
+    animation: blink 0.7s infinite;
   }
 
   @keyframes blink {
@@ -257,7 +259,7 @@ main {
 nav {
   .linkedin {
     img {
-      margin-left: 0;
+      margin-left: 20px;
     }
   }
 
@@ -268,7 +270,7 @@ nav {
 
   a {
     img {
-      max-width: 35px;
+      max-width: 32px;
     }
   }
 }
@@ -281,15 +283,5 @@ nav {
 
 .effect:hover {
   transform: scale(1.2);
-  opacity: 1;
-}
-
-.effect-port {
-  transition:
-    transform 250ms,
-    opacity 400ms;
-}
-.effect-port:hover {
-  transform: scale(1.07);
   opacity: 1;
 }
