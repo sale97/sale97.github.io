@@ -1,4 +1,14 @@
 @media (max-width: 1550px) {
+  .port-grup {
+    iframe {
+      max-width: 30% !important;
+    }
+  }
+  main {
+    h1 {
+      font-size: 3rem;
+    }
+  }
   .work {
     max-width: 70%;
   }
@@ -51,15 +61,33 @@
       font-size: 1.1rem;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
   }
 }
 
 @media (max-width: 800px) {
+  .client-section a {
+    font-size: 1.1rem;
+  }
+  .client-section {
+    .creatorslke {
+      display: inline;
+    }
+  }
   .portfolio {
     .port-grup {
       display: contents;
+      iframe {
+        margin-bottom: 50px;
+        margin: 0 auto;
+        height: 40vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+      }
 
       .port {
         margin-bottom: 50px;
@@ -150,11 +178,11 @@
     }
 
     p {
-      font-size: 2vh;
+      font-size: 1.8vh;
     }
 
     h1 {
-      font-size: 5vh;
+      font-size: 2.3rem;
       white-space: wrap;
     }
   }
@@ -207,5 +235,13 @@
         margin-right: 5px;
       }
     }
+  }
+}
+@media (max-width: 800px) {
+  .portfolio .port-grup iframe {
+    height: 50vh;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 90% !important;
   }
 }

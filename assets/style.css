@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap");
 .wall {
   height: 100vh;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.555);
-  background: url(./img/321312312321.jpg);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.575);
+  background: url(./img/586086-blur-abstract.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
+/* samo za desktop */
+@media (min-width: 768px) {
+  .wall {
+    background-attachment: fixed;
+  }
+}
 /* .back-video {
   position: absolute;
   right: 0;
@@ -72,7 +77,7 @@ header nav a {
   letter-spacing: 2px;
 }
 header img {
-  max-width: 10vh;
+  max-width: 13vh;
   margin-top: 10px;
 }
 
@@ -81,6 +86,7 @@ main {
   max-width: 70%;
   letter-spacing: 0.5px;
   margin: 0 auto;
+  text-align: center;
 }
 main p .hover-underline-animation {
   color: #61892f;
@@ -146,10 +152,8 @@ main h1 {
   max-width: 130vh;
   font-size: 4rem;
   white-space: nowrap;
-}
-main h1::after {
-  content: "|";
-  animation: blink 0.7s infinite;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 @keyframes blink {
   0% {
@@ -214,14 +218,14 @@ main .p-white {
 }
 
 nav .linkedin img {
-  margin-left: 20px;
+  margin-left: 0;
 }
 nav .effect {
   padding-left: 0;
   margin-left: 5px;
 }
 nav a img {
-  max-width: 32px;
+  max-width: 35px;
 }
 
 .effect {
@@ -230,6 +234,15 @@ nav a img {
 
 .effect:hover {
   transform: scale(1.2);
+  opacity: 1;
+}
+
+.effect-port {
+  transition: transform 250ms, opacity 400ms;
+}
+
+.effect-port:hover {
+  transform: scale(1.07);
   opacity: 1;
 }
 
@@ -336,7 +349,6 @@ a {
   max-width: 60%;
   margin: 0 auto;
   padding: 20px;
-  margin-bottom: 100px;
   border-radius: 5px;
   transition: background-color 0.5s;
 }
@@ -352,7 +364,6 @@ a {
 
 .portfolio {
   text-align: center;
-  margin-bottom: 100px;
 }
 .portfolio .port-grup {
   display: flex;
@@ -369,6 +380,14 @@ a {
 .portfolio .port-grup {
   margin: 0 auto;
   max-width: 70%;
+}
+.portfolio .port-grup iframe {
+  margin-bottom: 50px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.portfolio .part3 {
+  padding-bottom: 100px;
 }
 .portfolio .port {
   display: inline-block;
@@ -448,7 +467,7 @@ a {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-left: 50px;
   position: relative;
   top: -50px;
@@ -509,6 +528,97 @@ a {
   display: none;
 }
 
+.portfolio .port-grup iframe {
+  margin-bottom: 50px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.client-section .creatorslke {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.client-section a {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.client-section a img {
+  width: clamp(70px, 15vh, 130px);
+  height: clamp(70px, 15vh, 130px);
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.client-section {
+  padding-bottom: 50px;
+}
+.client-section h2 {
+  color: #61892f;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.socila-new {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 2vh;
+}
+.socila-new a img {
+  max-width: 5.5vh;
+}
+
+.skill-icons {
+  margin: 0 auto;
+  text-align: center;
+}
+.skill-icons img {
+  max-width: 6vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile */
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
 footer {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
   padding-bottom: 20px;
@@ -531,13 +641,19 @@ footer .footer-social {
   justify-content: center;
 }
 footer .footer-social a img {
-  width: 35px;
+  width: 5.5vh;
   margin-top: 30px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 @media (max-width: 1550px) {
+  .port-grup iframe {
+    max-width: 30% !important;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
   .work {
     max-width: 70%;
   }
@@ -576,12 +692,28 @@ footer .footer-social a img {
     font-size: 1.1rem;
   }
   main h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 800px) {
+  .client-section a {
+    font-size: 1.1rem;
+  }
+  .client-section .creatorslke {
+    display: inline;
+  }
   .portfolio .port-grup {
     display: contents;
+  }
+  .portfolio .port-grup iframe {
+    margin-bottom: 50px;
+    margin: 0 auto;
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
   }
   .portfolio .port-grup .port {
     margin-bottom: 50px;
@@ -649,10 +781,10 @@ footer .footer-social a img {
     display: none;
   }
   main p {
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
   main h1 {
-    font-size: 5vh;
+    font-size: 2.3rem;
     white-space: wrap;
   }
   header {
@@ -692,5 +824,13 @@ footer .footer-social a img {
     margin-top: 20px;
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .portfolio .port-grup iframe {
+    height: 50vh;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 90% !important;
   }
 }/*# sourceMappingURL=style.css.map */
