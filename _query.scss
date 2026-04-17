@@ -1,0 +1,211 @@
+@media (max-width: 1550px) {
+  .work {
+    max-width: 70%;
+  }
+  .portfolio {
+    .port-grup {
+      margin: 0 auto;
+      max-width: 70%;
+    }
+  }
+
+  .about {
+    max-width: 70%;
+  }
+
+  header {
+    max-width: 75%;
+  }
+
+  .experience {
+    max-width: 70%;
+  }
+
+  main {
+    max-width: 75%;
+    padding-top: 2%;
+  }
+
+  .arrow {
+    margin-top: -50px;
+  }
+
+  #myBtn {
+    img {
+      max-width: 18%;
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  nav {
+    a {
+      font-size: 1rem;
+      img {
+        max-width: 25px;
+      }
+    }
+  }
+  main {
+    p {
+      font-size: 1.1rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolio {
+    .port-grup {
+      display: contents;
+
+      .port {
+        margin-bottom: 50px;
+        text-align: center;
+
+        p {
+          max-width: 350px;
+          text-align: center;
+          margin: 0 auto;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        .port1 {
+          margin: 0 auto;
+          text-align: center;
+
+          a {
+            .port-left {
+              margin-right: 0;
+            }
+
+            .port-right {
+              margin-left: 0;
+            }
+
+            img {
+              max-width: 85%;
+              max-height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+    .about-pic {
+      display: block;
+      text-align: center;
+
+      p {
+        padding-bottom: 40px;
+      }
+
+      img {
+        margin: 0;
+        max-width: 80%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .fields {
+    .fields-p {
+      display: grid;
+
+      .p1 {
+        padding-right: 0;
+        padding: 15px;
+      }
+    }
+  }
+
+  .wall {
+    height: 100vh;
+  }
+
+  main {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 95%;
+
+    #auto-type {
+      height: 15vh;
+    }
+
+    button {
+      img {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 2vh;
+    }
+
+    h1 {
+      font-size: 5vh;
+      white-space: wrap;
+    }
+  }
+
+  header {
+    display: flex;
+    text-align: center;
+    max-width: 95%;
+
+    .nav-mob {
+      display: inline-flex;
+
+      a {
+        font-size: 2.5vh;
+        font-weight: 600;
+        margin-left: 40px;
+        padding-top: 30px;
+      }
+    }
+
+    nav {
+      display: none;
+    }
+  }
+
+  .experience {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    h3 {
+      span {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .social-mob {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 90vh;
+
+    a {
+      img {
+        max-width: 35px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

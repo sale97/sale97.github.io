@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap');
+
+.wall {
+  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.555);
+  background: url(./img/321312312321.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* fixed samo za desktop */
+@media (min-width: 768px) {
+  .wall {
+    background-attachment: fixed;
+  }
+}
+
+/* .back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}*/
+
+body {
+  font-family: poppins;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-50%);
+  transition: all 0.8s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  max-width: 70%;
+  align-items: center;
+  justify-content: space-between;
+
+  nav {
+    align-items: center;
+    display: flex;
+
+    a:hover {
+      color: #61892f;
+      transition: 0.3s;
+    }
+
+    a {
+      color: white;
+      text-transform: uppercase;
+      text-indent: 10px;
+      font-weight: bold;
+      margin-left: 20px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+  }
+
+  img {
+    max-width: 10vh;
+    margin-top: 10px;
+  }
+}
+
+main {
+  padding-top: 5%;
+  max-width: 70%;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+
+  p {
+    .hover-underline-animation {
+      color: #61892f;
+      margin-bottom: 5vh;
+    }
+  }
+
+  .space {
+    padding-bottom: 10px;
+  }
+
+  .spacex2 {
+    padding-bottom: 40px;
+  }
+
+  .button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #60892f27;
+    color: white;
+    padding: 2vh 4vh;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 33px #000000;
+    text-decoration: none;
+    z-index: 0;
+  }
+
+  /* background layer */
+  .button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #60892f17;
+    z-index: 0;
+  }
+
+  /* hover layer */
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #4a6f22a2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  /* hover effect */
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* TEXT FIX (IMPORTANT) */
+  .button {
+    isolation: isolate;
+  }
+
+  h1 {
+    color: white;
+    max-width: 130vh;
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+
+  h1::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .p-white {
+    color: white;
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  margin-bottom: -2px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #61892f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.arrow {
+  text-align: center;
+  margin-top: -75px;
+
+  a {
+    img {
+      max-width: 5.5vh;
+    }
+  }
+}
+
+nav {
+  .linkedin {
+    img {
+      margin-left: 20px;
+    }
+  }
+
+  .effect {
+    padding-left: 0;
+    margin-left: 5px;
+  }
+
+  a {
+    img {
+      max-width: 32px;
+    }
+  }
+}
+
+.effect {
+  transition:
+    transform 250ms,
+    opacity 400ms;
+}
+
+.effect:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
